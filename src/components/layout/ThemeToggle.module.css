@@ -1,0 +1,35 @@
+.toggle {
+  background: var(--bg-glass);
+  border: var(--border-glass);
+  padding: 0.6rem;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  color: var(--text-primary);
+  width: 42px;
+  height: 42px;
+}
+
+.toggle:hover {
+  background: var(--bg-glass-hover);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+.toggle:active .icon {
+  transform: rotate(45deg);
+}

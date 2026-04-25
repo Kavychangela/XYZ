@@ -1,0 +1,78 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8rem 2rem 4rem;
+}
+
+.bgElements {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.gridPattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--text-secondary);
+  max-width: 660px;
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.metrics {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.metricItem {
+  text-align: center;
+}
+
+.metricItem h4 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.metricItem p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
